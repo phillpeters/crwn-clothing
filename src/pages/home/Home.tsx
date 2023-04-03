@@ -1,4 +1,4 @@
-import Directory from '../components/CategoryMenu/Directory';
+import Directory from '../../components/Directory/Directory';
 
 const Home = () => {
   const categories = [
