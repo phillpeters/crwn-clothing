@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'consistent-return': 'off',
     'react/react-in-jsx-scope': 0,
     'prettier/prettier': [
       'error',
@@ -30,11 +31,21 @@ module.exports = {
         singleQuote: true
       }
     ],
+    'react/button-has-type': 0,
     'react/function-component-definition': [
       2,
       {
         namedComponents: 'arrow-function'
       }
-    ]
+    ],
+    'react/jsx-props-no-spreading': [
+      'error',
+      {
+        html: 'ignore'
+      }
+    ],
+    'react/require-default-props': 0,
+    'no-return-await': 'off',
+    '@typescript-eslint/return-await': ['error', 'always']
   }
 };
