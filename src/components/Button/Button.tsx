@@ -16,13 +16,14 @@ const buttonStyleClasses = {
   inverted: 'inverted'
 };
 
-const Button = ({ children, type, buttonStyle }: Props) => {
+const Button = ({ children, type, buttonStyle, onClick }: Props) => {
   return (
     <button
       className={`button-container ${
         buttonStyleClasses[buttonStyle as keyof ButtonStyleClasses]
       }`}
       type={type}
+      onClick={onClick}
     >
       {children}
     </button>
