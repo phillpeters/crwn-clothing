@@ -4,10 +4,7 @@ import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar/Navbar';
 import Authentication from './pages/Authentication/Authentication';
-
-const Shop = () => {
-  return <h1>I am the shop page</h1>;
-};
+import Shop from './pages/Shop/Shop';
 
 const App = () => {
   return (
